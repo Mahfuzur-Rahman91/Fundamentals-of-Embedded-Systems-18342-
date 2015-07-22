@@ -1,0 +1,18 @@
+Sumanth Suresh
+Sudhir Kumar Vijay
+
+Mini-Kernel
+Some Design Decisions: 
+1) The Mutex sleep queue is maintained using a linked list with a rear pointer and a front pointer (pSleep_queue) with FIFO policy. Rear pointers to each mutex's sleep queue is maintained as a global static array in mutex.c. This rear pointer saves the O(n) time overhead of having to traverse the list from the front to reach the last node for insertion into the queue.
+2) To figure out the first time a process is being context switched into, we use the lr register. If the lr register is 0, then it's the first time. 
+3) The cur_tcb pointer was specified as optional for use. We used to it to point to the current running process. The cur_tcb pointer is always correctly updated to the target process, just before a context switch, in the dispatch functions. 
+4) Insertion sort has been used to sort the tasks array based on the time period to implement rate-monotonic scheduling policy.
+----------------------------------------------------------------------------------------------------------------------------------------
+Mini-Kernel: UB Test/Highest locker priority protocol
+1) We have implemented the UB test, as given in the handout, using a factor of 1000 in the numerator to account for the loss of precision. The U(k) values are stored in an array in ub.h. We have also included an excel sheet to show our calculations for U(k).
+2) To implement the highest locker priority protocol, we made the following changes from Part 1:
+	- proc.c: Calls 'assign_schedule' and checks for schedulability. event_wait signal now checks if it was called from a task that holds a mutex.
+	- mutex.c: When a process calling mutex_lock succesfully acquires a mutex, its curr_prio is set to zero. Also when the next task in-line for the mutex is assigned the mutex, its curr_prio is set to zero.
+	- sched.c: The allocate_tasks function is altered to assign native priority from tasks. In part 1, we just used current priority.
+	
+

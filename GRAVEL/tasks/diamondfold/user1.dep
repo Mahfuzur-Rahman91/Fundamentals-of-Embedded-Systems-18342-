@@ -1,0 +1,23 @@
+/home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/user1/user1.o:  \
+ /home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/user1/user1.c \
+  /home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/libc/include/stdio.h \
+  /home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/libc/include/stdarg.h \
+  /home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/libc/include/sys/types.h \
+  /home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/libc/include/bits/types.h \
+  /home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/libc/include/stdlib.h \
+  /home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/libc/include/unistd.h \
+  /home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/libc/include/bits/fileno.h
+
+/home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/libc/include/stdio.h:
+
+/home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/libc/include/stdarg.h:
+
+/home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/libc/include/sys/types.h:
+
+/home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/libc/include/bits/types.h:
+
+/home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/libc/include/stdlib.h:
+
+/home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/libc/include/unistd.h:
+
+/home/sumanth/Downloads/Lab3/repo/15342/lab3-support/tasks/libc/include/bits/fileno.h:
